@@ -1,0 +1,21 @@
+spring:
+  profiles:
+    active: dev #当有多个配置文件的时候，表明选用那个配置文件
+
+#  datasource:
+#    driver-class-name: com.mysql.cj.jdbc.Driver
+#    url: jdbc:mysql://127.0.0.1:3306/ecp-test?useUnicode=true&characterEncoding=utf8&autoReconnect=true&rewriteBatchedStatements=true&useSSL=false&allowMultiQueries=true&serverTimezone=UTC
+#    username: root
+#    password: 123456
+
+server:
+  port: 8080 #设置端口号
+  serverlet:
+    context-path: /myproject #配置上下文路径[命名可以改变],后面没有对应的配置默认找index.html
+
+app:
+  #接口版本
+  name: ywq
+  version: v0.1
+  downloadPath: /download/
+  uploadPath:  /upload/
